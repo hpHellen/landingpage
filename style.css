@@ -1,0 +1,150 @@
+* { /*formatando todo codigo*/
+    margin: 0; /*Altera a margem*/
+    padding:0; /* nao alterou nada*/
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif; /*Altera a fonte*/
+    line-height: 1.6; /*Altera o distanciamento da linha em altura*/
+    background-color: #f9f9f9; /*Altera a cor do fundo*/
+}
+
+nav{
+    position: fixed;/*fica fixa mesmo rolando a tela para baixo*/
+    top: 0; /*espaçamento a partir do topo*/ 
+    width: 100%; /*altera a largura para 100%*/
+    background-color: #72837b2a; /*altera a cor de fundo da navbar*/
+    padding: 5px 0; /*Aumenta a barra de navegação*/
+
+}
+
+nav ul{
+    list-style-type:none; /*retira os marcadores de lista*/
+    display: flex; /*Põem um elemento ao lado do outro*/ 
+    justify-content:end; /*Centraliza os elementos horizontalmente*/
+}
+
+nav ul li{
+    margin: 0 20px; /*Separou os elementos dentro do nav vertical/horizontal*/
+}
+
+nav ul li a{
+    color:#ffffff; /*Muda a cor da letra para branca*/
+    text-decoration: none; /*Retira o sublinhado das palavras*/
+    font-size: 20px; /*Altera o tamanho da fonte*/
+    padding: 10px; /*centralizou um pouco mais a nav bar*/ 
+    transition: color 0.3s;/*é o tempo que leva qnd vc passa o mouse em cima e da efeito*/
+    /*só funciona com o hover*/
+}
+
+nav ul li a:hover{
+    color:#8ba9aa;
+    text-decoration:underline;/*sublinha qnd passa o mouse*/
+
+}
+
+section:not(#home) { /*edita todas as sections,exceto o home*/
+    padding: 100px 20px;/*Aumentou o espaçamento entre as sections e da margem*/
+    text-align: center;/*Centralizou as sections*/
+    display: flex; /*Nao vi mudança*/
+    justify-content: center; /*nao vi mudança*/
+    align-items: center; /*alinhamento vertical*/
+    height: 100vh; /*Alterou a altura entre a secction*/
+}
+
+#home{ /*sempre q for um ID usar #*/
+    background-image: url(https://images.pexels.com/photos/982612/pexels-photo-982612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);/* Adiciona uma imagem*/
+    background-size: cover;/*Declara q ela vai cobrir todo site*/
+    background-repeat: no-repeat;/*Ela n vai repetir se nao cobrir todo site*/
+    color: #ffffff;/*Altera a cor da letra para preto*/
+    height: 100vh;/*Declara a altura que a imagem vai cobrir*/
+    text-align: center; /*Poem o texto do home para o centro*/
+    display: flex; /*Mudou o texto para cima*/
+    flex-direction:column; /*Criou uma barra branca no button e centralizou*/
+    justify-content:center;/*Centralizou no meio da imagem*/
+    align-items: center; /*tirou a barra branca do button e consertou*/
+    font-size: 1.7em;/*Aumentou a fonte*/
+}
+
+h1{
+    text-align: left;
+    width: 20%;
+    font-size: 2.5em;
+    padding-top: 6%;
+    margin-right: 60%;
+    line-height: 1.3;
+}
+
+.content{
+    display: flex; /* Centraliza */
+    flex-direction: row; /* Poem o texto mais para baixo */
+    align-items: center; /*poem o texto mais para cima*/
+    justify-content: center; /*Centraliza*/
+}
+
+.content img{
+    width: 400px; /*modifica a largura da pagina*/
+    height: 300px; /*modifica a altura da pagina*/
+    object-fit: cover; /*Nao vi mudança*/
+    margin-right: 20px; /*nao vi mudança*/
+    border-radius: 9px; /*Deixa as bordas arredondadas*/
+
+}
+
+.content .text{
+    max-width: 600px; /*centraliza uma parte do site*/
+    text-align: left; /*    deixa o texto ao lado da imagen começando pela esquerda*/
+}
+
+.content .text h2{
+    font: 2em; /*Altera a fonte do site*/
+    margin-bottom: 20px; /*Altera a distancia de baixo*/
+    color: #000000; /*Altera a cor*/
+}
+
+.content .text p{
+    font-size: 1.1em; /*Altera o tamanho da fonte*/
+    color: #000000; /*Altera a cor da fonte do p*/
+}
+
+#conheca {
+    background-color: #75796863;/*Muda a cor do fundo*/
+}
+
+#cardapio{
+    background-color: #787a6f;/*muda a cor do fundo*/
+}
+
+#contact{
+    background-color: #75796863;/*muda a cor do fundo*/
+}
+
+.cta-button{
+    margin-top: 30px; /*Aumenta a distancia na parte de cima*/
+    background-color:#ffffff;/*muda a cor de fundo do botao*/
+    color: rgb(0, 0, 0); /*altera a cor da letra*/
+    padding: 15px 30px; /*aumenta o botao para os lados*/
+    font-size: 18px; /*Aumenta a fonte e o botao*/
+    border: none; /*retira a borda*/
+    border-radius: 15px; /*arredonda a borda do botao*/
+    cursor:pointer; /*cria uma animação de clichar*/
+    box-shadow: 10px 10px 6px rgb(0, 0, 0,0.1);
+    transition: background-color 0.3s ease, transform 1s ease;
+    margin-right: 69%;
+    
+}
+
+.cta-button:hover{
+    box-shadow: 0px 1px 3px #1d1a1a;
+    background-color: #8ba9aa;
+}
+
+footer{
+    background-color: #787a6f;
+    padding: 20px 50px;
+    text-align: left;
+    padding-bottom: 1%;
+    font-size: 0.9em;
+    line-height: 1.2;
+}
